@@ -1,0 +1,10 @@
+<div *ngIf="purchasedProducts.length > 0; else empty">
+    Recycle Bin
+    <p *ngFor="let item of purchasedProducts; trackBy:itemById" appRoundBlock>
+        {{item.id}} {{item.name}} {{item.price}}
+    </p>
+</div>
+  
+<ng-template #empty>
+    Recycle Bin is empty.
+</ng-template>
