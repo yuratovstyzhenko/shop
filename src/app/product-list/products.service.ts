@@ -5,7 +5,7 @@ import { Product } from './product.model';
   providedIn: 'root',
 })
 export class ProductsService {
-  products: Product[] = [
+  private products: Product[] = [
     {
       name: 'item1',
       price: 150,
